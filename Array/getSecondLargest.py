@@ -7,3 +7,15 @@ Input: arr[] = [12, 35, 1, 10, 34, 1]
 Output: 34
 Explanation: The largest element of the array is 35 and the second largest element is 34.
 '''
+class Solution:
+    def getSecondLargest(self, arr):
+        first = second = -1
+
+        for num in arr:
+            if num > first:
+                second = first
+                first = num
+            elif num > second and num != first:
+                second = num
+
+        return second
