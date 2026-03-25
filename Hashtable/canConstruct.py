@@ -19,4 +19,3 @@ def canConstruct(self, ransomNote: str, magazine: str) -> bool:
             return False
         ch_count[ch] -= 1
     return True
-            
