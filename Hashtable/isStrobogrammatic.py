@@ -4,7 +4,6 @@ A strobogrammatic number is a number that looks the same when rotated 180 degree
 Input: num = "69"
 Output: true
 '''
-
 class Solution:
   def isStrobogrammatic(self, num: str) -> bool:
       stroboMap = {'0' : '0', '1' : '1', '6' : '9', '8' : '8', '9': '6'}
