@@ -6,7 +6,6 @@ Example 1:
 Input: intervals = [[0,30],[5,10],[15,20]]
 Output: 2
 '''
-
 class Solution:
   def minMeetingRooms(self, intervals: List[List[int]]) -> int:
       intervals.sort()
